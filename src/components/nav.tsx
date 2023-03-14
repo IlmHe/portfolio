@@ -1,4 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import './nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+
+library.add(fab.faGithub);
+library.add(fab.faLinkedin);
 
 interface NavProps {
     homeRef: React.RefObject<HTMLDivElement>;
@@ -14,10 +22,28 @@ const Navbar: React.FC<NavProps> = ({homeRef, aboutRef, projectsRef, contactRef}
         }
     };
 
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset >= window.innerHeight - (window.innerHeight * 0.07)) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
 
     return (
-        <nav>
-            <ul>
+        <nav className={`navClass ${isFixed ? "fixed" : ""}`}>
+            <ul className="navText">
                 <li>
                     <button onClick={() => scrollToRef(homeRef)}>Home</button>
                 </li>
@@ -31,6 +57,19 @@ const Navbar: React.FC<NavProps> = ({homeRef, aboutRef, projectsRef, contactRef}
                     <button onClick={() => scrollToRef(contactRef)}>Contact</button>
                 </li>
             </ul>
+            <ul>
+                <li className="icons">
+                    <a href="https://github.com/IlmHe">
+                        <FontAwesomeIcon icon={['fab', 'github']} />
+                    </a>
+                </li>
+                <li className="icons">
+                    <a href="https://www.linkedin.com/in/ilmar/">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                    </a>
+                </li>
+            </ul>
+
         </nav>
     );
 };
