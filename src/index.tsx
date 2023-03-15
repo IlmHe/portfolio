@@ -31,7 +31,6 @@ const App: React.FC = () => {
             <About sectionRef={aboutRef}/>
             <Projects sectionRef={projectsRef}/>
             <Contact sectionRef={contactRef}/>
-
         </div>
 
     );

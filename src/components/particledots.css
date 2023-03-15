@@ -1,0 +1,5 @@
+#tsparticles2 {
+    position: absolute;
+    min-height: 100%;
+    z-index: -1;
+}
