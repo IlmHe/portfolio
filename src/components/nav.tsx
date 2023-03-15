@@ -59,12 +59,12 @@ const Navbar: React.FC<NavProps> = ({homeRef, aboutRef, projectsRef, contactRef}
             </ul>
             <ul>
                 <li className="icons">
-                    <a href="https://github.com/IlmHe">
+                    <a href="https://github.com/IlmHe" target="_blank">
                         <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                 </li>
                 <li className="icons">
-                    <a href="https://www.linkedin.com/in/ilmar/">
+                    <a href="https://www.linkedin.com/in/ilmar/" target="_blank">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} />
                     </a>
                 </li>

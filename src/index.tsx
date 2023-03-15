@@ -8,26 +8,32 @@ import Projects from './pages/projects/projects';
 import './index.css';
 
 
-
 const App: React.FC = () => {
+
+
     const homeRef = useRef<HTMLDivElement>(null);
     const aboutRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
     const contactRef = useRef<HTMLDivElement>(null);
 
     return (
-        <React.StrictMode>
-            <Navbar
-                homeRef={homeRef}
-                aboutRef={aboutRef}
-                projectsRef={projectsRef}
-                contactRef={contactRef}
-            />
-            <Home sectionRef={homeRef}/>
+        <div>
+            <div>
+                <Navbar
+                    homeRef={homeRef}
+                    aboutRef={aboutRef}
+                    projectsRef={projectsRef}
+                    contactRef={contactRef}
+                />
+            </div>
+
+            <Home sectionRef={homeRef} aboutRef={aboutRef}/>
             <About sectionRef={aboutRef}/>
             <Projects sectionRef={projectsRef}/>
             <Contact sectionRef={contactRef}/>
-        </React.StrictMode>
+
+        </div>
+
     );
 };
 

@@ -1,3 +1,28 @@
-body::-webkit-scrollbar {
-    display: none;
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8d243a;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+root {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    background-color: #252525;
 }
