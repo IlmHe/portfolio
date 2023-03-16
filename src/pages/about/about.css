@@ -12,7 +12,7 @@
     margin-top: 10rem;
 }
 
-img {
+.aboutDiv img {
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     background: linear-gradient(90deg, rgba(176, 55, 77, 1) 0%, rgba(141, 36, 58, 1) 50%, rgba(218, 92, 92, 1) 100%);
     min-width: 15rem;

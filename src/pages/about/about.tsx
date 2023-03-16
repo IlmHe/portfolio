@@ -2,7 +2,7 @@ import React from 'react';
 import {animated, useSpring} from '@react-spring/web'
 import './about.css';
 import {useInView} from 'react-intersection-observer';
-import resumePDF from '../../resume/ResumeIlmarHeinonen.pdf'
+import resumePDF from '../../assets/ResumeIlmarHeinonen.pdf'
 
 interface AboutProps {
     sectionRef: React.RefObject<HTMLDivElement>;
@@ -22,8 +22,8 @@ const About: React.FC<AboutProps> = ({sectionRef}) => {
 
 
     const {ref, inView} = useInView({
-        threshold: 0, // adjust the threshold to your liking
-        triggerOnce: false // set to false to trigger the animation every time it's in view
+        threshold: 0,
+        triggerOnce: false
     });
 
     const animationConfig = useSpring({

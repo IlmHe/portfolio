@@ -62,7 +62,7 @@ const Particledots = () => {
                             enable: true,
                         },
                         move: {
-                            direction: "top",
+                            direction: "bottom",
                             enable: true,
                             outModes: {
                                 default: "bounce",
@@ -76,16 +76,16 @@ const Particledots = () => {
                                 enable: true,
                                 area: 500,
                             },
-                            value: 40,
+                            value: 10,
                         },
                         opacity: {
-                            value: 0.5,
+                            value: 0.3,
                         },
                         shape: {
                             type: "circle",
                         },
                         size: {
-                            value: {min: 1, max: 5},
+                            value: {min: 1, max: 4},
                         },
                     },
                     detectRetina: true,

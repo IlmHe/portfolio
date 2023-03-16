@@ -1,2 +1,113 @@
+
 .projectsWrapper {
+    min-height: 100vh;
+    margin-left: 20rem;
+    margin-right: 30rem;
+    display: flex;
+    flex-flow: column;
 }
+
+#projectsId {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #eae6e5;
+    margin-top: 5rem;
+    align-self: center;
+}
+
+.projectsWrapper p {
+    font-size: 1.4vw;
+    min-font-size: 20px;
+    font-weight: 400;
+    color: #eae6e5;
+}
+
+.projectsWrapper p h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: end;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+}
+
+.firstProject {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.firstProject p {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    margin-right: 5rem;
+}
+.iconsFirst {
+    max-height: 40px;
+    align-self: end;
+    margin-left: 3rem;
+}
+.imgDiv {
+    height: 30vw;
+}
+
+.firstProject div {
+    min-height: 200px;
+    height: 30vw;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    box-shadow: #12130f 20px 50px 10px 0px;
+    border-right: #8d243a 4px solid;
+    border-top: #8d243a 4px solid;
+    border-bottom: #8d243a 4px solid;
+    border-radius: 5px;
+}
+
+
+.firstProject p button {
+
+    /*https://codepen.io/t_afif/pen/bGooZmq*/
+
+    margin: 0;
+    --border: 2px; /* the border width */
+    --slant: 0.5em; /* control the slanted corners */
+    --color: #b0374d; /* the color */
+    margin: 0;
+
+    font-size: 2rem;
+    padding: 0.4em 1.2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color);
+    background: linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+    background-size: calc(var(--slant) + 1.3 * var(--border)) calc(var(--slant) + 1.3 * var(--border));
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+    clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+    100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant))
+    );
+    transition: color var(--t, 0.3s), background-size 0.3s;
+}
+
+.firstProject p button:focus-visible {
+    outline-offset: calc(-1 * var(--border));
+    outline: var(--border) solid #000c;
+    clip-path: none;
+    background-size: 0 0;
+}
+
+.firstProject p button:hover,
+.firstProject p button:active {
+    background-size: 100% 100%;
+    color: #eae6e5;
+    --t: 0.2s 0.1s;
+}
+
+.firstProject p button:active {
+    --s: #0005;
+    transition: none;
+}
+
