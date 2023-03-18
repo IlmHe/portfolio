@@ -39,3 +39,35 @@ body {
     width: 100%;
     z-index: -100;
 }
+
+
+/*mobile warning*/
+.mobile-warning {
+    display: none;
+}
+
+/*mobile warning*/
+.mobile-warning {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mobile-warning {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 60px;
+        background-color: #FFC107;
+        text-align: center;
+        z-index: 9999;
+        padding: 10px;
+    }
+    body {
+        overflow: auto;
+        padding-bottom: 60px;
+    }
+}

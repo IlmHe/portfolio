@@ -50,6 +50,9 @@ const App: React.FC = () => {
 
     return (
         <div>
+            <div className="mobile-warning">
+                <p>The mobile version of this website is under development, for the best viewing experience, a computer is required</p>
+            </div>
             <div>
                 <Navbar
                     homeRef={homeRef}

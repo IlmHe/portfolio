@@ -1,8 +1,8 @@
 
 .projectsWrapper {
     min-height: 100vh;
-    margin-left: 20rem;
-    margin-right: 30rem;
+    margin-left: 10vw;
+    margin-right: 15vw;
     display: flex;
     flex-flow: column;
 }
@@ -10,65 +10,80 @@
 #projectsId {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     color: #eae6e5;
     margin-top: 5rem;
     align-self: center;
 }
 
 .projectsWrapper p {
-    font-size: 1.4vw;
-    min-font-size: 20px;
+    font-size:calc(15px + 0.5vw);
     font-weight: 400;
     color: #eae6e5;
 }
 
 .projectsWrapper p h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: end;
+    font-size: 3rem;
+    font-weight: 100;
     margin-bottom: 2rem;
     align-self: flex-end;
+    color: #b0374d;
 }
 
 .firstProject {
     display: flex;
     margin-top: 10rem;
+    min-width: 50%;
 }
 
 .firstProject p {
     display: flex;
     flex-flow: row wrap;
-    flex: 1;
     margin-right: 5rem;
-}
-.iconsFirst {
-    max-height: 40px;
-    align-self: end;
-    margin-left: 3rem;
-}
-.imgDiv {
-    height: 30vw;
+    align-items: flex-start;
+    align-content: space-around;
 }
 
 .firstProject div {
     min-height: 200px;
     height: 30vw;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    box-shadow: #12130f 20px 50px 10px 0px;
-    border-right: #8d243a 4px solid;
-    border-top: #8d243a 4px solid;
-    border-bottom: #8d243a 4px solid;
-    border-radius: 5px;
+    box-shadow: #12130f 10px -20px 5px 0px;
+    border-right: #8d243a 7px solid;
+    border-top: #8d243a 7px solid;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+.firstProject div:hover {
+    box-shadow: #12130f 30px -40px 10px 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.iconsFirst {
+    max-height: 40px;
+    align-self: end;
+    margin-left: 3rem;
+    transition: 0.2s;
+}
+
+.iconsFirst:hover {
+    margin-bottom: 8px;
+}
+
+.imgDiv {
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 
-.firstProject p button {
+.projectsWrapper p button {
+    align-self: end;
 
     /*https://codepen.io/t_afif/pen/bGooZmq*/
-
-    margin: 0;
     --border: 2px; /* the border width */
     --slant: 0.5em; /* control the slanted corners */
     --color: #b0374d; /* the color */
@@ -92,22 +107,78 @@
     transition: color var(--t, 0.3s), background-size 0.3s;
 }
 
-.firstProject p button:focus-visible {
+.projectsWrapper p button:focus-visible {
     outline-offset: calc(-1 * var(--border));
     outline: var(--border) solid #000c;
     clip-path: none;
     background-size: 0 0;
 }
 
-.firstProject p button:hover,
-.firstProject p button:active {
+.projectsWrapper p button:hover,
+.projectsWrapper p button:active {
     background-size: 100% 100%;
     color: #eae6e5;
     --t: 0.2s 0.1s;
 }
 
-.firstProject p button:active {
+.projectsWrapper p button:active {
     --s: #0005;
     transition: none;
 }
 
+.secondProject {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10rem;
+    min-width: 50%;
+}
+
+.secondProject p {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5rem;
+    align-items: flex-start;
+    align-content: space-around;
+
+}
+
+.secondProject div {
+    min-height: 200px;
+    height: 15vw;
+    box-shadow: #12130f -10px -20px 5px 0px;
+    border-left: #8d243a 7px solid;
+    border-top: #8d243a 7px solid;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+.secondProject div:hover {
+    box-shadow: #12130f -30px -40px 10px 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.iconsSecond {
+    max-height: 40px;
+    align-self: end;
+    margin-right: 3rem;
+    transition: 0.2s;
+}
+.iconsSecond:hover {
+    margin-bottom: 8px;
+}
+#iconId{
+    margin-top: 10px;
+}
+#decar {
+    height: 100%;
+}
+#decar img {
+    width: 25vw;
+}
+.projectsWrapper p button {
+    margin-top: 10px;
+}

@@ -38,8 +38,7 @@
 }
 
 .textDiv p {
-    font-size: 1.4vw;
-    min-font-size: 20px;
+    font-size:calc(15px + 0.8vw);
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -50,6 +49,8 @@
     padding-top: 10rem;
     padding-right: 10rem;
     color: #eae6e5;
+    margin-left: 10px;
+
 }
 
 #downloadBtn {
