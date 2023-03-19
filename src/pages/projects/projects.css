@@ -85,7 +85,6 @@
 
 .projectsWrapper p button {
     align-self: end;
-
     /*https://codepen.io/t_afif/pen/bGooZmq*/
     --border: 2px; /* the border width */
     --slant: 0.5em; /* control the slanted corners */
