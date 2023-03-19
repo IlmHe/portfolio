@@ -74,11 +74,11 @@ const Projects: React.FC<ProjectsProps> = ({sectionRef}) => {
             </div>
             <div id="marginId" className="secondProject">
                 <p><h1>Portfolio Page</h1>
-                    The very page you're on! Built with React and TypeScript and deployed to Heroku via Docker.
+                    The very page you're on! Built with React and TypeScript and deployed to Heroku.
                     Used to showcase my awesome projects and skills.
                     <img src={react} id="iconId" alt="Docker logo" className="iconsSecond"></img>
                     <img src={typescriptlogo} id="iconId" alt="Kubernetes logo" className="iconsSecond"></img>
-                    <img src={docker} id="iconId" alt="Google cloud platform logo" className="iconsSecond"></img>
+                    <img src={git} id="iconId" alt="Google cloud platform logo" className="iconsSecond"></img>
                     <button onClick={() => window.open('https://github.com/IlmHe/portfolio', '_blank')}>Source Code</button>
                 </p>
                 <div onClick={() => window.open('https://github.com/IlmHe/portfolio', '_blank')}>
