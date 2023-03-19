@@ -9,9 +9,6 @@ interface HomeProps {
 
 
 const Home: React.FC<HomeProps> = ({sectionRef, aboutRef}) => {
-    const sectionStyle = {
-        height: '100vh'
-    };
 
     const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
@@ -20,7 +17,7 @@ const Home: React.FC<HomeProps> = ({sectionRef, aboutRef}) => {
     };
 
     return (
-        <div style={sectionStyle} ref={sectionRef} className="wrapperDiv">
+        <div ref={sectionRef} className="wrapperDiv">
 
             <div className="firstDiv">
                 Hello, I'm <span id="Ilmar">Ilmar</span>.

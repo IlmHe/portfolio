@@ -4,11 +4,13 @@
     color: #eae6e5;
     margin-bottom: 0.5rem;
     margin-top: 5rem;
+
 }
 
 .secondDiv {
     color: #eae6e5;
     font-weight: 400;
+
 }
 #tsparticles {
     position: absolute;
@@ -29,7 +31,8 @@
 #Ilmar {
     font-weight: 600;
     font-size: 4rem;
-    color: #b0374d;
+    color: #CC4A62;
+
 }
 
 .thirdDiv {
@@ -37,6 +40,8 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 50%;
+    bottom: 0;
+    margin-top: 20rem;
 }
 
 #workBtn {
@@ -45,7 +50,7 @@
 
     --border: 2px;    /* the border width */
     --slant: 0.5em;   /* control the slanted corners */
-    --color: #b0374d; /* the color */
+    --color: #C63C55; /* the color */
 
     font-size: 2rem;
     padding: 0.4em 1.2em;

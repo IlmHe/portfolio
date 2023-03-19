@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import "./projects.css";
 import cardsNMonsters from '../../assets/cardsNMonsters.jpg'
 import Kotlin from '../../assets/Kotlin.png'
@@ -12,8 +12,14 @@ import decar from '../../assets/decar.png'
 import swift from '../../assets/swift.png'
 import swiftui from '../../assets/swiftui.png'
 import git from '../../assets/git.png'
+import react from '../../assets/react.png'
+import typescriptlogo from '../../assets/typescript.png'
+import portfolio from '../../assets/portfolio.jpg'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {library} from "@fortawesome/fontawesome-svg-core";
+import {fab} from "@fortawesome/free-brands-svg-icons";
 
-
+library.add(fab.faGithub);
 interface ProjectsProps {
     sectionRef: React.RefObject<HTMLDivElement>;
 }
@@ -34,10 +40,10 @@ const Projects: React.FC<ProjectsProps> = ({sectionRef}) => {
 
                 </p>
                 <div onClick={() => window.open('https://github.com/ohuji/Cards-Monsters', '_blank')}>
-                    <img className="imgDiv" src={cardsNMonsters}></img>
+                    <img className="imgDiv" src={cardsNMonsters} alt="image of cards and monsters project"></img>
                 </div>
             </div>
-            <div className="secondProject">
+            <div id="marginId" className="secondProject">
                 <p><h1>Fibonacci Calculator</h1>
                     Overengineered Fibonacci calculator, for dockerizing and deploying to kubernetes with complex configurations.
                     Also features an automated CI pipeline with GitHub Actions and deployment to Google Cloud.
@@ -49,10 +55,10 @@ const Projects: React.FC<ProjectsProps> = ({sectionRef}) => {
 
                 </p>
                 <div id="fibonacci" onClick={() => window.open('https://github.com/IlmHe/docker-k8s-gc', '_blank')}>
-                    <img className="imgDiv" src={fibonacci}></img>
+                    <img className="imgDiv" src={fibonacci} alt="image of fibonacci calculator project"></img>
                 </div>
             </div>
-            <div className="firstProject">
+            <div id="marginId" className="firstProject">
                 <p><h1>DecAR</h1>
                     DecAR works to tackle the problem of manual labour and its costs during the interior design phase,
                     and allows you to visualize what your dream apartment will look like without the trouble, using AR.
@@ -63,23 +69,27 @@ const Projects: React.FC<ProjectsProps> = ({sectionRef}) => {
 
                 </p>
                 <div id="decar" onClick={() => window.open('https://github.com/jannhakk/DecAR-k2', '_blank')}>
-                    <img className="imgDiv" src={decar}></img>
+                    <img className="imgDiv" src={decar} alt="image of decar project"></img>
                 </div>
             </div>
-            <div className="secondProject">
-                <p><h1>Fibonacci Calculator</h1>
-                    Overengineered Fibonacci calculator, for dockerizing and deploying to kubernetes with complex configurations.
-                    Also features an automated CI pipeline with GitHub Actions and deployment to Google Cloud.
-                    <img src={docker} id="iconId" alt="Docker logo" className="iconsSecond"></img>
-                    <img src={k8s} id="iconId" alt="Kubernetes logo" className="iconsSecond"></img>
-                    <img src={gcp} id="iconId" alt="Google cloud platform logo" className="iconsSecond"></img>
-                    <button onClick={() => window.open('https://github.com/IlmHe/docker-k8s-gc', '_blank')}>Source Code</button>
-
-
+            <div id="marginId" className="secondProject">
+                <p><h1>Portfolio Page</h1>
+                    The very page you're on! Built with React and TypeScript and deployed to Heroku via Docker.
+                    Used to showcase my awesome projects and skills.
+                    <img src={react} id="iconId" alt="Docker logo" className="iconsSecond"></img>
+                    <img src={typescriptlogo} id="iconId" alt="Kubernetes logo" className="iconsSecond"></img>
+                    <img src={docker} id="iconId" alt="Google cloud platform logo" className="iconsSecond"></img>
+                    <button onClick={() => window.open('https://github.com/IlmHe/portfolio', '_blank')}>Source Code</button>
                 </p>
-                <div onClick={() => window.open('https://github.com/IlmHe/docker-k8s-gc', '_blank')}>
-                    <img className="imgDiv" src={fibonacci}></img>
+                <div onClick={() => window.open('https://github.com/IlmHe/portfolio', '_blank')}>
+                    <img className="imgDiv" src={portfolio} alt="image of portfolio project"></img>
                 </div>
+            </div>
+            <div className="afterProjectText">
+                <p>And more on my GitHub: <a className="icons" href="https://github.com/IlmHe" target="_blank">
+                    <FontAwesomeIcon icon={['fab', 'github']} />
+                </a>
+                </p>
             </div>
         </div>
     );
