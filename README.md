@@ -4,7 +4,7 @@ This is a portfolio page built with React and TypeScript.
 
 ## Deployment
 
-This project has been deployed on Heroku via Docker.
+This project has been deployed on Heroku.
 
 ## Features
 
