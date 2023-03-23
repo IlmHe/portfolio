@@ -11,12 +11,12 @@ This project has been deployed on Heroku via Docker.
 - User-friendly interface
 - Easy to use and navigate
 - Professional look and feel
+- Responsive design
 
 ## Technologies Used
 
 - React
 - TypeScript
-- Docker
 - Heroku
 
 ## License
