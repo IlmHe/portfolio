@@ -1,12 +1,14 @@
 .wrapperDivAbout {
     display: flex;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 .aboutDiv {
     z-index: -1;
     flex: 1;
     padding-top: 10rem;
+    max-width: 100vw;
 }
 .btnDiv {
     margin-top: 10rem;
@@ -29,6 +31,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    max-width: 100vw;
 }
 
 .textDiv h1 {
@@ -64,7 +67,7 @@
     --slant: 0.5em;   /* control the slanted corners */
     --color: #C63C55; /* the color */
 
-    font-size: 2rem;
+    font-size:calc(15px + 0.6vw);
     padding: 0.4em 1.2em;
     border: none;
     cursor: pointer;
@@ -100,4 +103,34 @@
 #downloadBtn:active {
     --s: #0005;
     transition: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapperDivAbout {
+        flex-direction: column;
+    }
+    .textDiv{
+        padding: 0;
+        margin-left: 5px;
+        width: 90vw;
+        align-content: center;
+    }
+    .textDiv h1 {
+        text-align: center;
+    }
+    #textDiv {
+    }
+    .aboutDiv {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .aboutDiv img {
+        margin: 0;
+    }
+    .btnDiv{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,6 +1,6 @@
 .contactWrapper {
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 30vw;
+    margin-right: 30vw;
     min-height: 100vh;
 }
 #contacth1 {
@@ -35,7 +35,16 @@
     color: #CC4A62;
     transition: 0.3s;
 }
-
 .envelopeIcon:active {
     margin-top: 1rem;
+}
+@media screen and (max-width: 1000px) {
+    .contactWrapper {
+        margin: 0;
+        min-height: 100vh;
+    }
+    .textDivContact {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }

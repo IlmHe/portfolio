@@ -26,7 +26,7 @@ const Navbar: React.FC<NavProps> = ({homeRef, aboutRef, projectsRef, contactRef}
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.pageYOffset >= window.innerHeight - (window.innerHeight * 0.07)) {
+            if (window.pageYOffset >= window.innerHeight - (window.innerHeight * 0.1)) {
                 setIsFixed(true);
             } else {
                 setIsFixed(false);
@@ -58,14 +58,14 @@ const Navbar: React.FC<NavProps> = ({homeRef, aboutRef, projectsRef, contactRef}
                 </li>
             </ul>
             <ul>
-                <li className="icons">
-                    <a href="https://github.com/IlmHe" target="_blank">
-                        <FontAwesomeIcon icon={['fab', 'github']} />
+                <li className="iconsNav">
+                    <a id="fabIcon" href="https://github.com/IlmHe" target="_blank">
+                        <FontAwesomeIcon icon={['fab', 'github']} id="iconId"/>
                     </a>
                 </li>
-                <li className="icons">
-                    <a href="https://www.linkedin.com/in/ilmar/" target="_blank">
-                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                <li className="iconsNav">
+                    <a id="fabIcon" href="https://www.linkedin.com/in/ilmar/" target="_blank">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} id="iconId"/>
                     </a>
                 </li>
             </ul>
