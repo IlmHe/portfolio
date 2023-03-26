@@ -9,6 +9,8 @@ import './index.css';
 import Particle from "./components/particledots";
 import {animated, useSpring} from "@react-spring/web";
 import {useInView} from "react-intersection-observer";
+import { HashRouter } from "react-router-dom"
+
 
 
 const App: React.FC = () => {
@@ -71,4 +73,7 @@ const App: React.FC = () => {
     );
 };
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+    <HashRouter><App /></HashRouter>,
+    document.getElementById('root')
+);
