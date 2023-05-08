@@ -4,8 +4,7 @@ This is a portfolio page built with React and TypeScript.
 
 ## Deployment
 
-This project has been deployed on Heroku.
-[Link](https://ilmarportfolio.herokuapp.com/)
+This project is not currently deployed
 
 ## Features
 
@@ -18,7 +17,6 @@ This project has been deployed on Heroku.
 
 - React
 - TypeScript
-- Heroku
 
 ## License
 
