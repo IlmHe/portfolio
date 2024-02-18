@@ -1,7 +1,7 @@
 {
   "name": "ilmhe.github.io",
   "version": "0.1.0",
-  "homepage": "https://ilmhe.github.io",
+  "homepage": "https://ilmhe.github.io/ilmhe.github.io/portfolio",
   "private": false,
   "engines": {
     "node": "18.12.1",
@@ -41,6 +41,8 @@
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "test": "react-scripts test --env=jsdom"
   },
   "eslintConfig": {
@@ -60,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
