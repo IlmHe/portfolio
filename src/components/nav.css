@@ -1,0 +1,142 @@
+
+.navClass {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background: radial-gradient(circle, rgb(202, 48, 82) 0%, rgba(141,36,58,1) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 12px #12130f;
+    z-index: 1000;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+.navClass.fixed {
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(circle, rgb(202, 48, 82) 0%, rgba(141,36,58,1) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 10px #12130f;
+    bottom: auto;
+    z-index: 1000;
+    transition: 0.8s;
+}
+.navText {
+    max-width: 100vw;
+}
+
+
+.navText li button {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size:calc(15px + 0.6vw);
+    font-weight: 400;
+}
+
+.navText li:first-child {
+    margin-left: 1rem;
+}
+
+.navClass ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+#iconId {
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.iconsNav a {
+    color: #eae6e5;
+    text-decoration: none;
+
+}
+.navText button:hover, .iconsNav a:hover {
+    color: #310711;
+    transition: 0.2s;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+
+}
+
+.navClass button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #eae6e5;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+.iconsNav{
+    color: #eae6e5;
+    padding-left: 2vw;
+}
+.iconsNav:last-child {
+    margin-right: 3vw;
+}
+@media screen and (max-width: 1000px) {
+    .navClass {
+        position: fixed;
+        top: 0;
+        height: 5vh;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: radial-gradient(circle, rgb(202, 48, 82) 0%, rgba(141,36,58,1) 100%);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 2px 10px #12130f;
+        bottom: auto;
+        z-index: 1000;
+        -webkit-backface-visibility: hidden;
+        max-width: 100vw;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        transition: 0.8s;
+    }
+    .navClass.fixed {
+        transition: 0.5s;
+        height: 5rem;
+    }
+    .iconsNav {
+        padding: 0;
+    }
+    .navText li button {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .iconsNav:first-child {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 40px;
+    }
+    .iconsNav:last-child {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 40px;
+    }
+    .navText li:first-child {
+        margin-left: 0;
+    }
+    .navClass.fixed {
+        height: 5rem;
+
+    }
+}

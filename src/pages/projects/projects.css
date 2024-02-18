@@ -1,0 +1,291 @@
+
+.projectsWrapper {
+    min-height: 100vh;
+    margin-left: 10vw;
+    margin-right: 15vw;
+    display: flex;
+    flex-flow: column;
+    max-width: 100vw;
+}
+
+#projectsId {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #eae6e5;
+    margin-top: 5rem;
+    align-self: center;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+.projectsWrapper p {
+    font-size: calc(15px + 0.5vw);
+    font-weight: 400;
+    color: #eae6e5;
+}
+
+.projectsWrapper p h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+    color: #CC4A62;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+
+.firstProject {
+    display: flex;
+    margin-top: 5rem;
+    min-width: 50%;
+    max-width: 100vw;
+}
+
+.firstProject p {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5rem;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.firstProject div {
+    min-height: 200px;
+    height: 30vw;
+    box-shadow: #12130f 10px -20px 5px 0px;
+    border-right: #8d243a 7px solid;
+    border-top: #8d243a 7px solid;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+.firstProject div:hover {
+    box-shadow: #12130f 30px -40px 10px 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.iconsFirst {
+    max-height: 50px;
+    align-self: end;
+    margin-left: 3rem;
+    transition: 0.2s;
+}
+
+.iconsFirst:hover {
+    margin-bottom: 8px;
+}
+
+.imgDiv {
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+.projectsWrapper p button {
+    align-self: end;
+    /*https://codepen.io/t_afif/pen/bGooZmq*/
+    --border: 2px; /* the border width */
+    --slant: 0.5em; /* control the slanted corners */
+    --color: #C63C55; /* the color */
+    margin: 0;
+
+    font-size: 2rem;
+    padding: 0.4em 1.2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color);
+    background: linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+    background-size: calc(var(--slant) + 1.3 * var(--border)) calc(var(--slant) + 1.3 * var(--border));
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+    clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+    100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant))
+    );
+    transition: color var(--t, 0.3s), background-size 0.3s;
+}
+
+.projectsWrapper p button:focus-visible {
+    outline-offset: calc(-1 * var(--border));
+    outline: var(--border) solid #000c;
+    clip-path: none;
+    background-size: 0 0;
+}
+
+.projectsWrapper p button:hover,
+.projectsWrapper p button:active {
+    background-size: 100% 100%;
+    color: #eae6e5;
+    --t: 0.2s 0.1s;
+}
+
+.projectsWrapper p button:active {
+    --s: #0005;
+    transition: none;
+}
+
+.secondProject {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    min-width: 50%;
+}
+
+.secondProject p {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5rem;
+    align-items: flex-start;
+    align-content: space-around;
+
+}
+
+.secondProject div {
+    min-height: 200px;
+    height: 15vw;
+    box-shadow: #12130f -10px -20px 5px 0px;
+    border-left: #8d243a 7px solid;
+    border-top: #8d243a 7px solid;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+.secondProject div:hover {
+    box-shadow: #12130f -30px -40px 10px 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.iconsSecond {
+    max-height: 50px;
+    align-self: end;
+    margin-right: 3rem;
+    transition: 0.2s;
+}
+
+.iconsSecond:hover {
+    margin-bottom: 8px;
+}
+
+#iconIdnonfab {
+    margin-top: 20px;
+}
+
+#decar {
+    height: 100%;
+}
+
+#decar img {
+    width: 25vw;
+}
+
+#marginId {
+    margin-top: 15rem;
+}
+
+.projectsWrapper p button {
+    margin-top: 20px;
+}
+
+a.iconsProject {
+    padding-left: 5px;
+
+}
+#afterProjectIcon {
+    width: calc(3rem + 0.5vw);
+    height: calc(3rem + 0.5vw);
+}
+
+.iconsProject {
+    color: #eae6e5;
+
+}
+
+.iconsProject:hover {
+    color: #8d243a;
+    transition: 0.2s;
+
+}
+
+.afterProjectText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.afterProjectText p {
+    font-size: calc(1.5rem + 0.5vw);
+    text-align: center;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .projectsWrapper {
+        margin: 0;
+    }
+
+    .firstProject p {
+        margin-right: 10px;
+        max-width: 90vw;
+    }
+
+    .firstProject button {
+        width: 90vw;
+        margin-top: 10px;
+    }
+
+    .firstProject {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstProject div {
+        align-self: center;
+        margin-top: 50px;
+
+    }
+
+    .secondProject p {
+        margin-left: 10px;
+        max-width: 90vw;
+    }
+
+    .secondProject button {
+        width: 90vw;
+        margin-top: 10px;
+    }
+
+    .secondProject {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondProject div {
+        align-self: center;
+        margin-top: 50px;
+
+    }
+    #decar {
+        min-height: max-content;
+    }
+
+    #decar img {
+        height: 30vw;
+        width: auto;
+    }
+    #marginId {
+        margin-top: 7rem;
+    }
+}

@@ -1,0 +1,136 @@
+.wrapperDivAbout {
+    display: flex;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.aboutDiv {
+    z-index: -1;
+    flex: 1;
+    padding-top: 10rem;
+    max-width: 100vw;
+}
+.btnDiv {
+    margin-top: 10rem;
+}
+
+.aboutDiv img {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background: linear-gradient(90deg, rgba(176, 55, 77, 1) 0%, rgba(141, 36, 58, 1) 50%, rgba(218, 92, 92, 1) 100%);
+    min-width: 15rem;
+}
+
+.aboutDiv img {
+    width: 50%;
+    margin-left: 10rem;
+}
+
+#textDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 100vw;
+}
+
+.textDiv h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #CC4A62;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+}
+
+.textDiv p {
+    font-size:calc(15px + 0.6vw);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.textDiv {
+    min-height: 80vh;
+    width: 50%;
+    padding-top: 10rem;
+    padding-right: 10rem;
+    color: #eae6e5;
+    margin-left: 10px;
+
+}
+
+#downloadBtn {
+
+    /*https://codepen.io/t_afif/pen/bGooZmq*/
+
+    --border: 2px;    /* the border width */
+    --slant: 0.5em;   /* control the slanted corners */
+    --color: #C63C55; /* the color */
+
+    font-size:calc(15px + 0.6vw);
+    padding: 0.4em 1.2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color);
+    background:
+            linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+            linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+    background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+    background-repeat: no-repeat;
+    box-shadow:
+            0 0 0 200px inset var(--s,#0000),
+            0 0 0 var(--border) inset var(--color);
+    clip-path:
+            polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+            100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+            );
+    transition: color var(--t,0.3s), background-size 0.3s;
+}
+
+#downloadBtn:focus-visible {
+    outline-offset: calc(-1*var(--border));
+    outline: var(--border) solid #000c;
+    clip-path: none;
+    background-size: 0 0;
+}
+#downloadBtn:hover,
+#downloadBtn:active{
+    background-size: 100% 100%;
+    color: #eae6e5;
+    --t: 0.2s 0.1s;
+}
+#downloadBtn:active {
+    --s: #0005;
+    transition: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapperDivAbout {
+        flex-direction: column;
+    }
+    .textDiv{
+        padding: 0;
+        margin-left: 5px;
+        width: 90vw;
+        align-content: center;
+    }
+    .textDiv h1 {
+        text-align: center;
+    }
+    #textDiv {
+    }
+    .aboutDiv {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .aboutDiv img {
+        margin: 0;
+    }
+    .btnDiv{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

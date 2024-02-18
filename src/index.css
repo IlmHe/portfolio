@@ -1,0 +1,41 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8d243a;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+root {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    background-color: #252525;
+}
+.particleWrapper {
+    visibility: hidden;
+}
+
+.particleWrapper.fixed {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
